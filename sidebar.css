@@ -1,0 +1,25 @@
+aside {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-icon{
+  width: 25px;
+}
+
+.shorts-icon{
+  width: 18px;
+}
+
+.subscription-icon{
+  width: 25px;
+}
+.you-icon{
+  width: 25px;
+}
