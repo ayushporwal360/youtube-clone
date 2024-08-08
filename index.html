@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="left-section">
+        <img
+          class="hamburger-icon"
+          src="/Icons/hamburger-menu.svg"
+          alt="hamburger-icon"
+        />
+        <img
+          class="youtube-icon"
+          src="/Icons/youtube-logo.svg
+        "
+          alt="youtube-icon"
+        />
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-btn">
+          <img class="search-icon" src="/Icons/search.svg" alt="search-icon" />
+        </button>
+        <button class="voice-search-btn">
+          <img
+            class="voice-search-icon"
+            src="/Icons/voice-search-icon.svg"
+            alt="voice-search-icon"
+          />
+        </button>
+      </div>
+
+      <div class="right-section">
+        <img class="uplaod-icon" src="/Icons/upload.svg" alt="uplaod-icon" />
+        <img
+          class="notifications-icon"
+          src="/Icons/notifications.svg"
+          alt="notifications-icon"
+        />
+        <img
+          class="account-icon"
+          src="/Icons/account2.jpg"
+          alt="account-icon"
+        />
+      </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside>
+      <div class="scroll-container">
+        <section class="top-section">
+          <div class="sidebar-link selected">
+            <img class="home-icon" src="/Icons/home.svg" alt="home-icon" />
+            <p id="home-para">Home</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img
+              class="shorts-icon"
+              src="/Icons/shorts.png"
+              alt="shorts-icon"
+            />
+            <p id="shorts-para">Shorts</p>
+          </div>
+
+          <div class="sidebar-link subscriptions">
+            <img
+              class="subscription-icon"
+              src="/Icons/subscriptions.svg"
+              alt="subscription-icon"
+            />
+            <p>Subscriptions</p>
+          </div>
+        </section>
+
+        <!-- YOU -->
+        <section class="you-section">
+          <div class="sidebar-link">
+            <p id="you-para">You</p>
+            <img
+              class="you-icon"
+              src="/Icons/arrow-right.svg"
+              alt="shorts-icon"
+            />
+          </div>
+          <div class="sidebar-link">
+            <img class="you-icon" src="/Icons/history.png" alt="shorts-icon" />
+            <p>History</p>
+          </div>
+          <div class="sidebar-link">
+            <img class="you-icon" src="/Icons/playlist.svg" alt="shorts-icon" />
+            <p>Playlist</p>
+          </div>
+          <div class="sidebar-link">
+            <img class="you-icon" src="/Icons/clock.png" alt="shorts-icon" />
+            <p>Watch later</p>
+          </div>
+          <div class="sidebar-link liked-videos">
+            <img class="you-icon" src="/Icons/thumb-up.png" alt="shorts-icon" />
+            <p>Liked videos</p>
+          </div>
+        </section>
+
+        <!-- SUBSCRIPTIONS -->
+        <section class="sub-section">
+          <p id="sub-para">Subscriptions</p>
+
+          <div class="sidebar-link">
+            <img src="/channel profile/bbs.jpg" alt="channel1-logo" />
+            <p>BeastBoyShub</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/channel profile/carryislive.jpg" alt="channel2-logo" />
+            <p>CarryisLive</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/channel profile/mrbeast.jpg" alt="channel3-logo" />
+            <p>MrBeast</p>
+          </div>
+
+          <div class="sidebar-link all-subs">
+            <img src="/Icons/all-subs.png" alt="all-subscriptions-icon" />
+            <p>All subscriptions</p>
+          </div>
+        </section>
+
+        <!-- EXPLORE -->
+        <section class="explore-section">
+          <p id="explore-para">Explore</p>
+
+          <div class="sidebar-link">
+            <img src="/Icons/trending.png" alt="trend-icon" />
+            <p>Trending</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/shopping.png" alt="shop-icon" />
+            <p>Shopping</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/music.png" alt="music-icon" />
+            <p>Music</p>
+          </div>
+
+          <div class="sidebar-link unsized">
+            <img src="/Icons/movies.png" alt="movies-icon" />
+            <p>Movies</p>
+          </div>
+
+          <div class="sidebar-link unsized">
+            <img src="/Icons/live.png" alt="live-icon" />
+            <p>Live</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img
+              class="gaming-icon"
+              src="/Icons/gaming.png"
+              alt="gaming-icon"
+            />
+            <p>Gaming</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/news.svg" alt="news-icon" />
+            <p>News</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/sports.png" alt="sports-icon" />
+            <p>Sports</p>
+          </div>
+
+          <div class="sidebar-link unsized">
+            <img src="/Icons/courses.png" alt="courses-icon" />
+            <p>Courses</p>
+          </div>
+
+          <div class="sidebar-link unsized">
+            <img src="/Icons/fashion.png" alt="fashion&beauty-icon" />
+            <p>Fashion & Beauty</p>
+          </div>
+
+          <div class="sidebar-link unsized podcast">
+            <img src="/Icons/podcast.svg" alt="podcast-icon" />
+            <p>Podcasts</p>
+          </div>
+        </section>
+
+        <!-- MORE FROM YOUTUBE -->
+        <section class="more-section">
+          <p id="more-para">More from Youtube</p>
+          <div class="sidebar-link">
+            <img src="/Icons/yt-premium.png" alt="yt-premium-icon" />
+            <p>Youtube Premium</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/yt-music.png" alt="yt-music-icon" />
+            <p>Youtube Music</p>
+          </div>
+
+          <div class="sidebar-link yt-kids">
+            <img src="/Icons/yt-kids.png" alt="yt-kids-icon" />
+            <p>Youtube Kids</p>
+          </div>
+        </section>
+
+        <!-- UNKNOWN -->
+        <section class="unknown-section">
+          <div class="sidebar-link settings">
+            <img src="/Icons/settings.png" alt="settings-icon" />
+            <p>Settings</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/flags.png" alt="flag-icon" />
+            <p>Report-history</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/help.png" alt="help-icon" />
+            <p>Help</p>
+          </div>
+
+          <div class="sidebar-link">
+            <img src="/Icons/feedback.png" alt="feedback-icon" />
+            <p>Send feedback</p>
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <!--CHIPS-->
+    <div class="content">
+      <div class="chips-wrapper">
+        <div class="chips selected-chip">
+          <p>All</p>
+        </div>
+        <div class="chips">
+          <p>Gaming</p>
+        </div>
+        <div class="chips">
+          <p>Web Development</p>
+        </div>
+        <div class="chips">
+          <p>Trailers</p>
+        </div>
+        <div class="chips">
+          <p>Computer programming</p>
+        </div>
+        <div class="chips">
+          <p>News</p>
+        </div>
+        <div class="chips">
+          <p>Grand Theft Auto VI</p>
+        </div>
+        <div class="chips">
+          <p>Music</p>
+        </div>
+        <div class="chips">
+          <p>Carl Johnson</p>
+        </div>
+        <div class="chips">
+          <p>Campuses</p>
+        </div>
+        <div class="chips">
+          <p>Live</p>
+        </div>
+        <div class="chips">
+          <p>Jethalal</p>
+        </div>
+        <div class="chips">
+          <p>Memes</p>
+        </div>
+        <div class="chips">
+          <p>Dr.Doom</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="video-grid">
+      <!-- video1 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video1.jpg" alt="video1" />
+          <div class="video-time">10:46</div>
+        </div>
+        <div class="video-info-gid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/rg.jpg"
+              alt="profile1"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">JAVELIN THROW 2 ft. VLOGGER UNCLE</p>
+            <span>
+              <p class="video-owner">R.G Bucket List</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">8.2M views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video2 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video2.jpg" alt="video2" />
+          <div class="video-time">18:56</div>
+        </div>
+
+        <div class="video-info-gid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/purav.jpg"
+              alt="profile2"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Dhruv Rathee Analysis &#124; Fame Ke Bhooke &#124; Purav Jha
+            </p>
+            <span>
+              <p class="video-owner">Purav Jha</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">8.6M views &#183; 7 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video3 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video3.jpg" alt="video3" />
+          <div class="video-time">52:58</div>
+        </div>
+        <div class="video-innfo-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/r2h.jpg"
+              alt="profile3"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">EPL Season 3 &#124; Round2Hell &#124; R2H</p>
+            <span>
+              <p class="video-owner">Round2Hell</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">40M views &#183; 3 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video4 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video4.jpg" alt="video4" />
+          <div class="video-time">44:38</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/bbs.jpg"
+              alt="profile4"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">MISSING CHILDREN</p>
+            <span>
+              <p class="video-owner">BeastBoyShub</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">386K views &#183; 20 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video5 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video5.jpg" alt="video5" />
+          <div class="video-time">12:17</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/carry.jpg"
+              alt="profile5"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">VADA PAV AUR CHAI &#128525; | CARRYMINATI</p>
+            <span>
+              <p class="video-owner">CarryMinati</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">39M views &#183; 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video6 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video6.jpg" alt="video6" />
+          <div class="video-time">2:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/marvel.jpg"
+              alt="profile6"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Deadpool & Wolverine | Final Trailer | In Theaters July 26
+            </p>
+            <span>
+              <p class="video-owner">Marvel Entertainment</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">7.8M views &#183; 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video7 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video7.jpg" alt="video7" />
+          <div class="video-time">17:03</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/mrbeast.jpg"
+              alt="profile7"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">&#36;1 vs &#36;100,000,000 House!</p>
+            <span>
+              <p class="video-owner">MrBeast</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">259M views &#183; 9 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video8 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video8.jpg" alt="video8" />
+          <div class="video-time">22:28</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/ac.jpeg"
+              alt="profile8"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Holi Returns | Ashish chanchlani</p>
+            <span>
+              <p class="video-owner">ashish chanchlani vines</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">43M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video9 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video9.jpg" alt="video9" />
+          <div class="video-time">5:51</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/ez.jpg"
+              alt="profile9"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              WEB DEVELOPMENT COMPLETE ROADMAP FOR BEGINNERS &#128293;
+            </p>
+            <span>
+              <p class="video-owner">Neeraj Walia</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">43M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video10 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video10.jpg" alt="video10" />
+          <div class="video-time">13:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/harkirat.jpg"
+              alt="profile10"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              FASTEST Way to Learn Coding and Get a JOB in 2023 (Step by Step)
+            </p>
+            <span>
+              <p class="video-owner">akirat Singh</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">533K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video11 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video11.jpg" alt="video11" />
+          <div class="video-time">1:09:51</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/religious-india.jpg"
+              alt="profile11"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Witness the POWER of LORD SHIVA!</p>
+            <span>
+              <p class="video-owner">Religious India</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">31M views &#183; 5 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video12 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video12.jpg" alt="video12" />
+          <div class="video-time">8:58</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/makejokeof.jpg"
+              alt="profile12"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              THALA For No Reason - MAKE JOKE OF ||MJO|| By Saurabh Shukla
+            </p>
+            <span>
+              <p class="video-owner">Make Joke Of</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">6.5M views &#183; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video13 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video13.jpg" alt="video13" />
+          <div class="video-time">6:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/badal.jpg"
+              alt="profile13"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Solo Leveling ANIME is Overrated?</p>
+            <span>
+              <p class="video-owner">Anime Cloud</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">393K views &#183; 5 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video14 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video14.jpg" alt="video14" />
+          <div class="video-time">6:50</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/nyt.jpg"
+              alt="profile14"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Types Of Superpowers | Ft. Ben10</p>
+            <span>
+              <p class="video-owner">NOT YOUR TYPE</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">16M views &#183; 2 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video15 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video15.jpg" alt="video15" />
+          <div class="video-time">4:54</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/pj.jpg"
+              alt="profile15"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              SPIDER-MAN: NO WAY HOME - Best Spider-Man Movie?
+            </p>
+            <span>
+              <p class="video-owner">PJ Explained</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">282K views &#183; 2 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video16 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video16.jpg" alt="video16" />
+          <div class="video-time">13:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/marvel.jpg"
+              alt="profile16"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Venom: The Last Dance | Official Trailer</p>
+            <span>
+              <p class="video-owner">Marvel Entertainment</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">8M views &#183; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video17-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video17.jpg" alt="video17" />
+          <div class="video-time">13:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/icc.jpg"
+              alt="profile17"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              The Epic Montage | T20 World Cup 2024 Final
+            </p>
+            <span>
+              <p class="video-owner">ICC</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">2.6M views &#183; 1 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video18 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video18.jpg" alt="video18" />
+          <div class="video-time">13:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/rockstar-games.jpg"
+              alt="profile18"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Grand Theft Auto VI Trailer 1</p>
+            <span>
+              <p class="video-owner">Rockstar Games</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">203M views &#183; 8 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video19 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video19.jpg" alt="video19" />
+          <div class="video-time">13:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/ml-records.jpg"
+              alt="profile19"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Samay Samjhayega Full Song | Tum Prem Ho Sad | Radha...
+            </p>
+            <span>
+              <p class="video-owner">ML Records</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">45M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- video20 -->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="/Thumbnail/video20.jpg" alt="video20" />
+          <div class="video-time">13:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="/channel profile/carryislive.jpg"
+              alt="profile20"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">ANDHERI RAAT BHOTIYO KE SAT -NO PROMOTION</p>
+            <span>
+              <p class="video-owner">CarryisLive</p>
+              <img
+                class="verified-icon"
+                src="/Icons/verified.png"
+                alt="verified-ion"
+              />
+            </span>
+            <p class="video-stats">756K views &#183; Streamed 2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
