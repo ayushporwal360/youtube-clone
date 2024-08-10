@@ -9,7 +9,7 @@
   width: 248px;
 }
 
-.video-info-gid {
+.video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
@@ -50,12 +50,21 @@
   width: 32px;
 }
 
+.artist-icon {
+  position: relative;
+  top: 3px;
+  right: 12px;
+  width: 32px;
+  width: 30px;
+  filter: opacity(0.6);
+}
+
 .thumbnail-row {
   margin-bottom: 15px;
   position: relative;
 }
 
-.video-preview{
+.video-preview {
   cursor: pointer;
 }
 
@@ -84,44 +93,47 @@
   align-items: center;
   justify-content: center;
 }
-.content{
-  width:calc(100vw - 230px);
+
+.chips-container {
+  width: calc(100vw - 230px);
   position: fixed;
   top: 55px;
   left: 258px;
   z-index: 200;
   background-color: white;
-  
 }
 
 .chips-wrapper {
   display: flex;
 }
 
-.chips{
+.chips {
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: rgb(47, 47, 47);
-  padding: 6px 12px;
+  padding: 5px 12px;
   margin: 12px 6px;
   background-color: #efefef;
   border-radius: 8px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
-.chips:hover{
+.chips:hover {
   background-color: #e6e5e5;
   cursor: pointer;
 }
 
-.selected-chip{
+.selected-chip {
   background-color: black;
   color: white;
   padding: 7px 11px;
 }
 
-.selected-chip:hover{
+.selected-chip:hover {
   background-color: black;
 }
+
